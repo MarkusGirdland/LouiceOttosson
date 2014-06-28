@@ -1,0 +1,230 @@
+#indexMain{
+    background-image: url(../images/danspose.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    
+}
+
+#omMigMain{
+    background-image: url(../images/hej.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+#singerSongwriterMain{
+    background-color: black;
+    background-image: url(../images/livekarusell.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    font-family: "SourceSansLight";
+}
+
+#musikalartistMain{
+    background-image: url(../images/mj.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+#trubadurMain{
+    background-image: url(../images/trubadur.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+#CVMain{
+    background-image: url(../images/cv-bild.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+#kontaktMain{
+    background-image: url(../images/kontakt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+main {
+    font-family: "SourceSans";
+}
+
+#meny{
+    position: relative;
+    float: left;
+    margin-top: 0;
+    padding-top: 0;
+    
+    list-style-type: none;
+    
+    font-family: "SourceSansLight";
+    
+    color: white;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+#singSongMeny {
+    position: relative;
+    float: left;
+    margin-top: 0;
+    padding-top: 0;
+    
+    list-style-type: none;
+    
+    font-family: "SourceSansLight";
+    
+    color: white;
+    display: block;
+    background-color: rgba(200, 0, 0, 0.6);
+    padding: 10px;
+}
+
+.lista{
+    float: left;
+    margin-left: 15px;
+}
+
+.Index{
+    margin-left: 500px;
+}
+
+#meny .active{
+    color: red;
+}
+
+#CVtext .CVlink{
+    color: blue;
+}
+
+.singSongText {
+    color: white;
+    font-family: "SourceSansLight";
+}
+
+#singSongh4 {
+    font-family: "SourceSansLight";
+    color: white;
+}
+
+a:link { text-decoration: none}
+a:link { color: white; }
+a:visited { color: white; }
+a:hover { color: red; }
+
+#galleryContainer {
+    padding: 50px;
+    background-position: center center;
+    background-repeat: repeat;
+    overflow: auto;
+}
+
+#images {
+    padding: 50px;
+    margin-left: 30px;
+}
+
+#images img {
+    max-height: 150px;
+    max-width: 150px;
+    height: auto;
+    width: auto;
+    margin-left: 25px;
+    display: block; 
+}
+
+#spotify{
+    padding-left: 50px;
+}
+                                                                       
+#images a {
+    position: relative;
+    background: white; 
+    display: inline;
+    float: left;
+    margin: 0 15px 30px;
+    padding: 10px 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	transition: all .15s linear;
+	z-index: 0;
+	-webkit-transform: rotate(5deg);  
+	-moz-transform: rotate(5deg); 
+	transform: rotate(5deg); 
+	border: 1px solid black;
+}
+
+#images a:after {
+    color: black;
+    font-family: "SourceSansLight";
+	font-size: 15px;
+	content: attr(title);
+	position: relative;
+	top:15px;
+
+}
+
+#images a:nth-child(3n)
+{
+	-webkit-transform: rotate(-10deg);  
+	-moz-transform: rotate(-10deg); 
+	transform: rotate(-10deg); 
+}
+
+#images a:nth-child(5n) { 
+	-webkit-transform: rotate(15deg);  
+	-moz-transform: rotate(15deg); 
+	transform: rotate(15deg); 
+}
+
+#images a:hover {
+	-webkit-transform: rotate(0deg);  /* Rotera till 0 grader */
+	-moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+	-webkit-transform: scale(1.5); /* Skala upp den */
+	-moz-transform: scale(1.5);
+    transform: scale(1.5);
+	z-index:10;                     /* Lägg den över dom andra i Z-index */
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);      /* Bleka ut skuggan */
+	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+    box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+
+#images a:focus {
+	-webkit-transform: rotate(0deg);  /* Rotera till 0 grader */
+	-moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+	-webkit-transform: scale(1.5); /* Skala upp den */
+	-moz-transform: scale(1.5);
+    transform: scale(1.5);
+	z-index:10;                     /* Lägg den över dom andra i Z-index */
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);      /* Bleka ut skuggan */
+	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+    box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+
+@font-face {
+    font-family: SourceSans;
+    src: url(../fonts/SourceSansPro-Semibold.ttf);
+}
+
+@font-face {
+    font-family: SourceSansLight;
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: SourceSansBold;
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}
