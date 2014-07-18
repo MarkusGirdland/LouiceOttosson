@@ -23,10 +23,12 @@
 }
 
 #musikalartistMain{
+    background-color: black;
     background-image: url(../images/mj.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:fixed;
+    font-family: "SourceSansLight";
 }
 
 #trubadurMain{
@@ -92,12 +94,19 @@ main {
 }
 
 .Index{
-    margin-left: 500px;
+    margin-left: 550px;
+    float: right;
 }
 
 #meny .active{
     color: red;
 }
+
+#singSongMeny .active{
+    color: red;
+}
+
+
 
 #CVtext .CVlink{
     color: blue;
@@ -112,6 +121,12 @@ main {
     font-family: "SourceSansLight";
     color: white;
 }
+
+#resultat {
+    font-family: "SourceSansLight";
+    color: white;
+}
+
 
 a:link { text-decoration: none}
 a:link { color: white; }
@@ -227,4 +242,124 @@ a:hover { color: red; }
 @font-face {
     font-family: SourceSansBold;
     src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+@media only screen and (max-width:1600px){
+    #indexMain{
+        background-size: 35%;
+    }
+    
+    #omMigMain{
+        background-size: 35%;
+    }
+    
+    #singerSongwriterMain{
+        background-size: 35%;
+    }
+    
+    #musikalartistMain{
+       background-size: 45%;
+    }
+    
+    #trubadurMain{
+        background-size: 35%;
+    }
+    
+    #CVMain{
+        background-size: 55%;
+    }
+    
+    #kontaktMain{
+        background-size: 35%;
+    }
+}
+
+@media only screen and (max-width:1400px){
+    #indexMain{
+        background-size: 25%;
+    }
+    
+    #omMigMain{
+        background-size: 25%;
+    }
+    
+    #singerSongwriterMain{
+        background-size: 25%;
+    }
+    
+    #musikalartistMain{
+       background-size: 35%;
+    }
+    
+    #trubadurMain{
+        background-size: 25%;
+    }
+    
+    #CVMain{
+        background-size: 45%;
+    }
+    
+    #kontaktMain{
+        background-size: 25%;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    #indexMain{
+        background-size: 15%;
+    }
+    
+    #omMigMain{
+        background-size: 15%;
+    }
+    
+    #singerSongwriterMain{
+        background-size: 15%;
+    }
+    
+    #musikalartistMain{
+       background-size: 25%;
+    }
+    
+    #trubadurMain{
+        background-size: 15%;
+    }
+    
+    #CVMain{
+        background-size: 35%;
+    }
+    
+    #kontaktMain{
+        background-size: 15%;
+    }
+}
+
+@media only screen and (max-width:700px){
+    #indexMain{
+        background-size: 5%;
+    }
+    
+    #omMigMain{
+        background-image: none;
+    }
+    
+    #singerSongwriterMain{
+        background-image: none;
+    }
+    
+    #musikalartistMain{
+        background-image: none;
+    }
+    
+    #trubadurMain{
+        background-size: 5%;
+    }
+    
+    #CVMain{
+        background-size: 25%;
+    }
+    
+    #kontaktMain{
+        background-size: 5%;
+    }
 }
