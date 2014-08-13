@@ -1,5 +1,5 @@
 #indexMain{
-    background-image: url(../images/danspose.jpg);
+    background-image: url(../images/danspose2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:fixed;
@@ -51,10 +51,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:fixed;
-}
-
-#indexh2{
-    margin-left: 20px;
 }
 
 main {
@@ -111,7 +107,15 @@ main {
     color: red;
 }
 
+.indexText {
+    margin-right: 60%;
+    font-family: "SourceSansLight";
+    text-align: center;
+}
 
+#indexh2 {
+    padding-left: 35px;
+}
 
 #CVtext .CVlink{
     color: blue;
@@ -390,6 +394,10 @@ nav select {
   nav select { display: inline-block; }
   
   #meny{
+      display: none;
+  }
+  
+  #singSongMeny {
       display: none;
   }
   
