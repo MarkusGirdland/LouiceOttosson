@@ -15,6 +15,7 @@
             <!-- Menyn -->
             <nav>
                 <ul id="meny">
+                <div id="listaDiv">
                     <li class="lista"><a href="pages/omMig.html">Om Mig</a></li>
                     <li class="lista"><a href="pages/singerSongwriter.html">Singer Songwriter</a></li>
                     <li class="lista"><a href="pages/musikalartist.html">Musikalartist/skådespelerska</a></li>
@@ -22,10 +23,12 @@
                     <li class="lista"><a href="pages/CVochShowreel.html">CV och Showreel</a></li>
                     <li class="lista"><a href="pages/bilder.html">Bilder</a></li>
                     <li class="lista"><a href="pages/kontakt.html">Kontakt</a></li>
-                    <li class="lista"><a class="Index" href="index.html"><img src="images/danspose.jpg" alt="Start" width="auto" height="20" /></a></li>
+                    <li class="lista"><a class="Index" href="index.html"><img src="images/symbol_mobil.png" alt="Start" width="auto" height="20" /></a></li>
+                </div>
                 </ul>
                 
-                <select name="selector" onchange="window.location=this.value;">
+                
+                <select id="mobilMeny" name="selector" onchange="window.location=this.value;">
                     <option value="" selected="selected">Välj sida...</option> 
                     
                     <option value="index.html">Hem</option> 
@@ -42,9 +45,25 @@
             <main>
             <br />
             <br />
-                <h2 id="indexh2" class="indexText">Vad är på gång?</h2>
-                <p class="indexText">Spelar i Vasaparken, Norrköping den 15 augusti kl 16.00. <br />
-                Med mig på scenen har jag John-Luis Herrera Adaros och Sofia rask.</p>
+                
+                <img id="headerImg" src="images/header.jpg">
+                <div id="indexMobile">
+                    <img src="images/symbol_mobil.png">
+                    <img src="images/logga_mobil.png">
+                </div>
+                
+                <br />
+                <br />
+                <br />
+                
+                <div id="floatdiv">
+                <a href="pages/omMig.html"><img class="floatball" src="images/louice.png"></a>
+                <a href="pages/singerSongwriter.html"><img class="floatball" src="images/musiken.png"></a>
+                <a href="pages/CVochShowreel.html"><img class="floatball" src="images/showreel.png"></a>
+                
+                </div>
+                
+    
             </main>
         </div>
         
