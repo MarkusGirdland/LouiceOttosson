@@ -72,6 +72,9 @@ main {
     margin-top: 0;
     padding-top: 0;
     
+    width: 100%;
+    margin-left: 0px;
+    
     list-style-type: none;
     
     font-family: "SourceSansLight";
@@ -87,6 +90,7 @@ main {
     float: left;
     margin-top: 0;
     padding-top: 0;
+    width: 100%;
     
     list-style-type: none;
     
@@ -143,6 +147,10 @@ main {
     margin-left: 150px;
 }
 
+.mobile_floatball {
+    display: none;
+}
+
 #headerImg {
     margin-left: 75px;
 }
@@ -187,100 +195,42 @@ a:visited { color: white; }
 a:hover { color: red; }
 
 #galleryContainer {
-    padding: 50px;
-    background-position: center center;
-    background-repeat: repeat;
-    overflow: auto;
+    padding-top: 75px;
+    margin-left: 0px;
+    padding: 0px;
 }
 
-#images {
-    padding: 50px;
-    margin-left: 30px;
+#galleryContainer img {
+    height: 195px;
+    margin-left: 15px;
 }
 
-#images img {
-    max-height: 150px;
-    max-width: 150px;
+.picture img {
+    max-height: 100px;
     height: auto;
     width: auto;
-    margin-left: 25px;
     display: block; 
 }
 
 #spotify{
     padding-left: 50px;
 }
-                                                                       
-#images a {
-    position: relative;
-    background: white; 
-    display: inline;
-    float: left;
-    margin: 0 15px 30px;
-    padding: 10px 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
-	box-shadow: 0 4px 6px rgba(0,0,0,.3);
-	-webkit-transition: all .15s linear;
-	-moz-transition: all .15s linear;
-	transition: all .15s linear;
-	z-index: 0;
-	-webkit-transform: rotate(5deg);  
-	-moz-transform: rotate(5deg); 
-	transform: rotate(5deg); 
-	border: 1px solid black;
+
+.picture:hover {
+    -webkit-transform: rotate(360deg) scale(1.45);
+    -moz-transform: rotate(360deg) scale(1.45);
+    -o-transform: rotate(360deg) scale(1.45);
+    -ms-transform: rotate(360deg) scale(1.45);
+    transform: rotate(360deg) scale(1.45);
+    
+        -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    
 }
 
-#images a:after {
-    color: black;
-    font-family: "SourceSansLight";
-	font-size: 15px;
-	content: attr(title);
-	position: relative;
-	top:15px;
 
-}
-
-#images a:nth-child(3n)
-{
-	-webkit-transform: rotate(-10deg);  
-	-moz-transform: rotate(-10deg); 
-	transform: rotate(-10deg); 
-}
-
-#images a:nth-child(5n) { 
-	-webkit-transform: rotate(15deg);  
-	-moz-transform: rotate(15deg); 
-	transform: rotate(15deg); 
-}
-
-#images a:hover {
-	-webkit-transform: rotate(0deg);  /* Rotera till 0 grader */
-	-moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-	-webkit-transform: scale(1.5); /* Skala upp den */
-	-moz-transform: scale(1.5);
-    transform: scale(1.5);
-	z-index:10;                     /* Lägg den över dom andra i Z-index */
-	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);      /* Bleka ut skuggan */
-	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
-    box-shadow: 0 10px 20px rgba(0,0,0,.7);
-}
-
-#images a:focus {
-	-webkit-transform: rotate(0deg);  /* Rotera till 0 grader */
-	-moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-	-webkit-transform: scale(1.5); /* Skala upp den */
-	-moz-transform: scale(1.5);
-    transform: scale(1.5);
-	z-index:10;                     /* Lägg den över dom andra i Z-index */
-	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);      /* Bleka ut skuggan */
-	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
-    box-shadow: 0 10px 20px rgba(0,0,0,.7);
-}
 
 @font-face {
     font-family: SourceSans;
@@ -481,6 +431,14 @@ nav select {
       height: auto;
       float: left;
   }
+  
+.mobile_floatball {
+    display: block;
+    margin-left: 10%;
+      width: 80%;
+      height: auto;
+      float: left;
+}
   
   #headerImg {
       display: none;
